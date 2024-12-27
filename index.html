@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cetrekan Lampu App</title>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="flex justify-center items-center bg-gray-500 pt-8 p-5 text-center">
+    <h1 class="text-4xl font-mono subfixel-antialised font-bold text-slate-50">CETREKAN LAMPU ON OFF BRO</h1>
+  </div>
+  <div class="flex justify-center items-center min-h-max w-full bg-gray-500 gap-8 p-5">
+    <!-- lampu 1 -->
+    <div class="flex flex-col items-center gap-2">
+      <img src="assets/images/off.gif" alt="Lampu Mati" id="lampu1">
+
+      <label for="AcceptConditions" class="
+      relative
+      inline-block
+      h-6
+      w-12
+      cursore-pointer
+      rounded-full
+      bg-gray-300
+      transition
+      [-webkit-tap-highlight-color:_transparent]
+      has-[:checked]:bg-green-500
+      ">
+        <input type="checkbox" id="AcceptConditions" class="peer sr-only" onchange="saklar()">
+        <span class="
+        absolute
+        inset-y-0
+        start-0
+        m-1
+        size-4
+        rounded-full
+        bg-white
+        transition-all
+        peer-checked:start-6
+        "></span>
+      </label>
+    </div>
+
+    <!-- lampu 2 -->
+    <div class="flex flex-col items-center gap-2">
+      <img src="assets/images/off.gif" alt="Lampu Mati" id="lampu2">
+      <label for="AcceptConditions2" class="
+      relative
+      inline-block
+      h-6
+      w-12
+      cursore-pointer
+      rounded-full
+      bg-gray-300
+      transition
+      [-webkit-tap-highlight-color:_transparent]
+      has-[:checked]:bg-green-500
+      ">
+        <input type="checkbox" id="AcceptConditions2" class="peer sr-only" onchange="saklar()">
+        <span class="
+        absolute
+        inset-y-0
+        start-0
+        m-1
+        size-4
+        rounded-full
+        bg-white
+        transition-all
+        peer-checked:start-6
+        "></span>
+      </label>
+    </div>
+    <!-- lampu 3 -->
+
+    <div class="flex flex-col items-center gap-2">
+      <img src="assets/images/off.gif" alt="Lampu Mati" id="lampu3">
+      <label for="AcceptConditions3"
+      class="
+      relative
+      inline-block
+      h-6
+      w-12
+      cursore-pointer
+      rounded-full
+      bg-gray-300
+      transition
+      [-webkit-tap-highlight-color:_transparent]
+      has-[:checked]:bg-green-500
+      ">
+        <input type="checkbox" id="AcceptConditions3" class="peer sr-only"
+        onchange="saklar()">
+        <span class="
+        absolute
+        inset-y-0
+        start-0
+        m-1
+        size-4
+        rounded-full
+        bg-white
+        transition-all
+        peer-checked:start-6
+        "></span>
+      </label>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>
